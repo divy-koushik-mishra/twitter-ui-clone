@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://abs.twimg.com/favicons/twitter.3.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home/X</title>
+  </head>
+  <body class="bg-black text-white">
+    <div id="wrapper" class="flex container m-auto items-start">
+      <div
+        class="nav w-[10%] md:w-[30%] h-full flex flex-col items-end sticky top-0"
+      >
+        <div class="logo w-3/4 p-2">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk invert w-7"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="menu w-3/4 px-1 text-xl">
+          <ul class="flex flex-col space-y-2 my-1">
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-home-5-fill"></i>
+              <span class="hidden md:block"> Home</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-search-line"></i>
+              <span class="hidden md:block"> Explore</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-notification-4-line"></i>
+              <span class="hidden md:block"> Notification</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-mail-line"></i>
+              <span class="hidden md:block"> Messages</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-slash-commands"></i>
+              <span class="hidden md:block"> Grok</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-file-list-line"></i>
+              <span class="hidden md:block"> Lists</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-group-line"></i>
+              <span class="hidden md:block"> Communities</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-twitter-x-line"></i>
+              <span class="hidden md:block"> Premium</span>
+            </li>
+            <li
+              class="p-1 rounded-full w-4/5 hover:bg-[#181818] cursor-pointer flex gap-4"
+            >
+              <i class="ri-user-line"></i>
+              <span class="hidden md:block"> Profile</span>
+            </li>
+          </ul>
+        </div>
+        <div class="post w-full flex justify-center">
+          <button
+            class="bg-blue-500 rounded-full font-bold text-lg px-2 py-1 my-4 text-center w-2/4 hover:bg-blue-600 transition"
+          >
+            <span class=""
+              ><i class="ri-quill-pen-line"></i>
+              <span class="hidden md:inline"> Post</span></span
+            >
+          </button>
+        </div>
+        <div class="accountInfo w-3/4 mx-3 hidden md:block">
+          <div
+            class="accountCard flex gap-3 items-center justify-between hover:bg-gray-800 cursor-pointer rounded-xl p-4"
+          >
+            <div class="flex gap-3 items-center">
+              <div class="accountCard_left w-10">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1650129595142905856/PiEoPjEE_400x400.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="accountCard_right flex flex-col">
+                <span class="font-bold text-sm">Divy Koushik Mishra </span
+                ><span class="text-sm text-gray-500">@divy_koushik</span>
+              </div>
+            </div>
+            <div class="followButton text-lg font-bold">...</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feed w-full md:w-2/5 border-x-[0.25px] border-gray-900">
+        <div
+          class="feedHeader w-full h-14 border-b-[0.25px] border-gray-900 flex font-light text-lg justify-between items-center sticky top-0 backdrop-blur-3xl opacity-80"
+        >
+          <div
+            class="cursor-pointer transition hover:bg-[#181818] leftHeader text-center w-1/2 h-[55px] flex justify-center items-center"
+          >
+            For you
+          </div>
+          <div
+            class="cursor-pointer transition hover:bg-[#181818] rightHeader w-1/2 text-center h-[55px] flex justify-center items-center"
+          >
+            Following
+          </div>
+        </div>
+        <div class="h-full">
+          <div class="tweetNowBox m-2 h-[10%] flex items-center justify-around">
+            <div class="profile w-[10%] rounded-full">
+              <img
+                src="https://pbs.twimg.com/profile_images/1650129595142905856/PiEoPjEE_400x400.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <div class="tweetTextArea mx-10 w-[90%] border-b border-gray-700">
+              <input
+                type="text"
+                class="w-full h-full bg-black outline-none text-lg px-1"
+                placeholder="What is happening?!"
+              />
+              <p
+                class="text-blue-500 text-sm my-2 cursor-pointer rounded-lg hover:bg-[#181818] w-fit px-2"
+              >
+                <i class="ri-earth-fill"></i> Everyone can reply
+              </p>
+            </div>
+          </div>
+          <div
+            class="mediaControl text-sm text-blue-500 w-full flex justify-around ml-6"
+          >
+            <div class="cursor-pointer px-1 addMedia">
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-image-2-fill"
+              ></i>
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-file-gif-fill"
+              ></i>
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-list-radio"
+              ></i>
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-emoji-sticker-fill"
+              ></i>
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-calendar-schedule-fill"
+              ></i>
+              <i
+                class="cursor-pointer p-1 rounded-full hover:bg-[#181818] ri-map-pin-line"
+              ></i>
+            </div>
+            <div class="postButton">
+              <button
+                class="bg-blue-500 rounded-full font-semibold px-4 py-1 text-center hover:bg-blue-600 transition text-white"
+              >
+                Post
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[0.25px] bg-gray-600 my-4"></div>
+        <div
+          class="w-full m-0 h-10 flex items-center justify-center text-blue-500 hover:bg-[#181818] cursor-pointer"
+        >
+          <h3>Show 560 Posts</h3>
+        </div>
+        <div class="w-full h-[0.25px] bg-gray-600 my-4"></div>
+        <div class="posts">
+          <div class="post mx-4">
+            <div class="postHeader flex items-center gap-2">
+              <div class="tweetProfilePic rounded-full">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1734162307033288704/elwT_irD_normal.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="userInfo text-sm">
+                <span class="font-bold hover:underline cursor-pointer">
+                  RiyaLITY</span
+                >
+                <span class="text-gray-600"> @maybe_riya · 3h</span>
+              </div>
+            </div>
+            <div class="postContent mx-10 px-4 leading-5">
+              Who's your Friend for an Issue ?? <br />
+              Stack <br />
+              Overflow <br />
+              Chat GPT <br />
+              Docs
+            </div>
+            <div
+              class="postControl my-1 text-sm text-gray-600 mx-10 flex justify-between"
+            >
+              <i class="cursor-pointer ri-chat-1-line"></i><span>15</span
+              ><i class="cursor-pointer ri-repeat-line"></i><span>4</span
+              ><i class="cursor-pointer ri-heart-line"></i><span>125</span
+              ><i class="cursor-pointer ri-bar-chart-fill"></i><span>2563</span>
+            </div>
+          </div>
+          <hr class="text-gray-600" />
+          <div class="post my-2 mx-4">
+            <div class="postHeader flex items-center gap-2">
+              <div class="tweetProfilePic rounded-full">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1734162307033288704/elwT_irD_normal.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="userInfo text-sm">
+                <span class="font-bold hover:underline cursor-pointer">
+                  RiyaLITY</span
+                >
+                <span class="text-gray-600"> @maybe_riya · 3h</span>
+              </div>
+            </div>
+            <div class="postContent mx-10 px-4 leading-5">
+              Who's your Friend for an Issue ?? <br />
+              Stack <br />
+              Overflow <br />
+              Chat GPT <br />
+              Docs
+            </div>
+            <div
+              class="postControl my-1 text-sm text-gray-600 mx-10 flex justify-between"
+            >
+              <i class="cursor-pointer ri-chat-1-line"></i><span>15</span
+              ><i class="cursor-pointer ri-repeat-line"></i><span>4</span
+              ><i class="cursor-pointer ri-heart-line"></i><span>125</span
+              ><i class="cursor-pointer ri-bar-chart-fill"></i><span>2563</span>
+            </div>
+          </div>
+          <hr class="text-gray-600" />
+          <div class="post my-2 mx-4">
+            <div class="postHeader flex items-center gap-2">
+              <div class="tweetProfilePic rounded-full">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1734162307033288704/elwT_irD_normal.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="userInfo text-sm">
+                <span class="font-bold hover:underline cursor-pointer">
+                  RiyaLITY</span
+                >
+                <span class="text-gray-600"> @maybe_riya · 3h</span>
+              </div>
+            </div>
+            <div class="postContent mx-10 px-4 leading-5">
+              Who's your Friend for an Issue ?? <br />
+              Stack <br />
+              Overflow <br />
+              Chat GPT <br />
+              Docs
+            </div>
+            <div
+              class="postControl my-1 text-sm text-gray-600 mx-10 flex justify-between"
+            >
+              <i class="cursor-pointer ri-chat-1-line"></i><span>15</span
+              ><i class="cursor-pointer ri-repeat-line"></i><span>4</span
+              ><i class="cursor-pointer ri-heart-line"></i><span>125</span
+              ><i class="cursor-pointer ri-bar-chart-fill"></i><span>2563</span>
+            </div>
+          </div>
+          <hr class="text-gray-600" />
+          <div class="post my-2 mx-4">
+            <div class="postHeader flex items-center gap-2">
+              <div class="tweetProfilePic rounded-full">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1734162307033288704/elwT_irD_normal.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="userInfo text-sm">
+                <span class="font-bold hover:underline cursor-pointer">
+                  RiyaLITY</span
+                >
+                <span class="text-gray-600"> @maybe_riya · 3h</span>
+              </div>
+            </div>
+            <div class="postContent mx-10 px-4 leading-5">
+              Who's your Friend for an Issue ?? <br />
+              Stack <br />
+              Overflow <br />
+              Chat GPT <br />
+              Docs
+            </div>
+            <div
+              class="postControl my-1 text-sm text-gray-600 mx-10 flex justify-between"
+            >
+              <i class="cursor-pointer ri-chat-1-line"></i><span>15</span
+              ><i class="cursor-pointer ri-repeat-line"></i><span>4</span
+              ><i class="cursor-pointer ri-heart-line"></i><span>125</span
+              ><i class="cursor-pointer ri-bar-chart-fill"></i><span>2563</span>
+            </div>
+          </div>
+          <hr class="text-gray-600" />
+        </div>
+      </div>
+
+      <div class="rightSidebar w-[30%] sticky top-0 hidden md:block">
+        <div class="searchBox p-2">
+          <input
+            type="text"
+            class="bg-[#16181C] text-white px-6 py-3 rounded-full w-4/5 focus:outline-blue-500 outline-none"
+            placeholder="search"
+          />
+        </div>
+
+        <div
+          class="subscribePremium bg-[#16181C] text-white m-2 rounded-xl w-4/5 p-4"
+        >
+          <h2 class="text-xl font-bold my-1">Subscribe to Premium</h2>
+          <p class="text-sm leading-4">
+            Subscribe to unlock new features and if eligible, receive a share of
+            ads revenue.
+          </p>
+          <button
+            class="bg-blue-500 rounded-full font-semibold px-4 py-1 my-2 text-center hover:bg-blue-600 transition"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div class="trending bg-[#16181C] text-white m-2 rounded-xl w-4/5 p-4">
+          <h2 class="font-bold text-lg text-gray-300">What’s happening</h2>
+
+          <div
+            class="trendingCard cursor-pointer px-2 py-3 rounded transition hover:bg-[#1D1F23]"
+          >
+            <span class="text-gray-500 text-sm">Trending</span>
+            <h2 class="text-lg font-semibold">#RashmikaMandanna</h2>
+            <span class="text-gray-500 text-sm">16K Posts</span>
+          </div>
+          <div
+            class="trendingCard cursor-pointer px-2 py-3 rounded transition hover:bg-[#1D1F23]"
+          >
+            <span class="text-gray-500 text-sm">Trending</span>
+            <h2 class="text-lg font-semibold">#RashmikaMandanna</h2>
+            <span class="text-gray-500 text-sm">16K Posts</span>
+          </div>
+          <div
+            class="trendingCard cursor-pointer px-2 py-3 rounded transition hover:bg-[#1D1F23]"
+          >
+            <span class="text-gray-500 text-sm">Trending</span>
+            <h2 class="text-lg font-semibold">#RashmikaMandanna</h2>
+            <span class="text-gray-500 text-sm">16K Posts</span>
+          </div>
+          <h3 class="text-blue-500 text-sm cursor-pointer">Show More</h3>
+        </div>
+        <div
+          class="suggestedFollow bg-[#16181C] text-white m-2 rounded-xl w-4/5 p-4"
+        >
+          <h2 class="text-xl font-bold my-1">Who to Follow</h2>
+          <div class="suggestedAccountsCards">
+            <div
+              class="accountCard flex gap-3 items-center justify-between hover:bg-gray-800 cursor-pointer rounded-xl p-4"
+            >
+              <div class="flex gap-3 items-center">
+                <div class="accountCard_left w-10">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/1742207674559709184/KjJeCFNM_normal.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                </div>
+                <div class="accountCard_right flex flex-col">
+                  <span class="font-bold">Divinho </span
+                  ><span class="text-sm text-gray-500">@divinho__</span>
+                </div>
+              </div>
+              <div class="followButton">
+                <button
+                  class="bg-white text-black text-sm px-3 py-1 rounded-full"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+            <div
+              class="accountCard flex gap-3 items-center justify-between hover:bg-gray-800 cursor-pointer rounded-xl p-4"
+            >
+              <div class="flex gap-3 items-center">
+                <div class="accountCard_left w-10">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/469936583416610816/EZt8Vl04_normal.png"
+                    alt=""
+                    class="rounded-full"
+                  />
+                </div>
+                <div class="accountCard_right flex flex-col">
+                  <span class="font-bold">StocksToTrade </span
+                  ><span class="text-sm text-gray-500">@stockstotrade</span>
+                </div>
+              </div>
+              <div class="followButton">
+                <button
+                  class="bg-white text-black text-sm px-3 py-1 rounded-full"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+            <div
+              class="accountCard flex gap-3 items-center justify-between hover:bg-gray-800 cursor-pointer rounded-xl p-4"
+            >
+              <div class="flex gap-3 items-center">
+                <div class="accountCard_left w-10">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/1654386944045117440/l7o_kMYh_reasonably_small.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                </div>
+                <div class="accountCard_right flex flex-col">
+                  <span class="font-bold">Arpit Bhayani </span
+                  ><span class="text-sm text-gray-500">@arpit_bhayani</span>
+                </div>
+              </div>
+              <div class="followButton">
+                <button
+                  class="bg-white text-black text-sm px-3 py-1 rounded-full"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-blue-500 text-sm cursor-pointer">Show More</h3>
+        </div>
+        <!-- terms n condition  -->
+        <div class="footer px-4 w-4/5">
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+            >Terms of Service</span
+          >
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            Privacy Policy
+          </span>
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            Cookie Policy
+          </span>
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            Accessibility
+          </span>
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            Ads info
+          </span>
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            More ...
+          </span>
+          <span
+            class="text-sm text-gray-600 hover:underline cursor-pointer leading-3"
+          >
+            © 2024 X Corp.</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
